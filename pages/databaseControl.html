@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Database Control</title>
+    <script src="../js/localStorage.js"></script>
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="icon" type="image/png" href="../src/icon/monkey.png">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js" type="module"></script>
+    <!--ace-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/mode-python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/ext-language_tools.js"></script>
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="navLeft">
+            <img src="../src/icon/monkey.svg" width="50px" style="margin-right: 10px;">
+            <a href="../index.html">Home </a><a href="../pages/problemList.html"> Problem List</a><a
+                href="../pages/editor.html"> Online Editor</a>
+        </div>
+
+        <div id="navRight">
+            <img src="../src/material/account.svg" id="login-button">
+            <img src="../src/material/logout.svg" id="logout-button">
+        </div>
+    </div>
+    <button id="write-administrator">Write administrator Data</button>
+    <button id="write-button">Write User Data</button>
+    <button id="write-problem">Write Problem Data</button>
+    <button id="read-button">Read User Data</button>
+    <button id="read-problem">Read Problem Data</button>
+    <script src="../js/databaseControl.js" type="module"></script>
+</body>
+
+
+</html>

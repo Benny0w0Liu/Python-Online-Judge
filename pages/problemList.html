@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Problem List</title>
+    <script src="../js/localStorage.js"></script>
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/problemList.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" href="../src/icon/monkey.png">
+
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="navLeft">
+            <img src="../src/icon/monkey.svg" width="50px" style="margin-right: 10px;">
+            <a href="../index.html">Home </a><a href="../pages/problemList.html"> Problem List</a><a
+                href="../pages/editor.html"> Online Editor</a>
+        </div>
+
+        <div id="navRight">
+            <img src="../src/material/account.svg" id="login-button">
+            <img src="../src/material/logout.svg" id="logout-button">
+        </div>
+    </div>
+    <div id="dashboard">
+        <canvas id="myDonutChart" style="height:300px"></canvas>
+    </div>
+    <div>
+        <img id="sort_by_id" src="../src/material/sort_by_id.svg">
+        <img id="sort_by_alpha" src="../src/material/sort_by_alpha.svg">
+        <input type="text" id="SearchInput" placeholder="Search for ID, Titles, Status..">
+    </div>
+    <div id="tableContainer">
+        <table id="ProblemTable">
+        </table>
+    </div>
+    <script src="../js/problemList.js" type="module"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navBar {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+    border-bottom: 1px rgb(123, 123, 123) solid;
+    background-color: white;
+    height: 50px;
+}
+
+#navBar form {
+    position: relative;
+    right: -50px;
+}
+
+#login-button {
+    border-radius: 50px;
+    height: 35px;
+    margin: 7.5px;
+}
+
+#navRight,
+#navLeft {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#navLeft img {
+    margin-left: 10px;
+}
+
+#navRight img {
+    margin-right: 10px;
+}
+
+#navLeft a {
+    text-decoration: none;
+    color: black;
+    border-width: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#navLeft a:hover {
+    border-color: rgb(123, 123, 123);
+}

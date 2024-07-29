@@ -1,0 +1,64 @@
+table {
+    margin-right: 10px;
+    width: 800px;
+    border-width: 10px;
+}
+
+.tablehead {
+    color: white;
+    background-color: #0F9D58;
+}
+
+table,
+tr,
+th,
+td {
+    border: 4px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+th,
+td,
+tr {
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+}
+
+
+th {
+    font-weight: lighter;
+    width: 80%;
+}
+
+#tableContainer {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#SearchInput {
+    background-image: url('../src/material/search.svg');
+    background-position: 6px 6px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 12px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#SearchInput:focus {
+    outline: none;
+    border-bottom: #4285F4 3px solid;
+}
+
+#dashboard {
+    display: flex;
+}

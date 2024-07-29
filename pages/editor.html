@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Writing to the page</title>
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="icon" type="image/png" href="../src/icon/monkey.png">
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="navLeft">
+            <img src="../src/icon/monkey.svg" width="50px" style="margin-right: 10px;">
+            <a href="../index.html">Home </a><a href="../pages/problemList.html"> Problem List</a><a
+                href="../pages/editor.html"> Online Editor</a>
+        </div>
+
+        <div id="navRight">
+            <img src="../src/material/account.svg" id="login-button">
+            <img src="../src/material/logout.svg" id="logout-button">
+        </div>
+    </div>
+    <div id="QuestionArea">
+        <div id="AnswerArea">
+            <div id="AnswerContainer">
+                <div id="codeBtnBar">
+                    <button id="fileSelect" title="upload your code">
+                        upload <img src="../src/material/uploadFile.svg" style="margin-left: 5px;">
+                    </button>
+                    <button id="runBtn" title="run your code">
+                        run <img src="../src/material/run.svg" style="margin-left: 5px;">
+                    </button>
+                    <input type="file" id="fileElem" multiple="true" accept=".py" style="display:none"
+                        onchange="handleFiles(this.files)" />
+                </div>
+                <div id="codeArea">
+                    <div id="editor"></div>
+                    <textarea id="editorContent" hidden></textarea>
+                    <div>console</div>
+                    <div id="console"></div>
+                </div>
+            </div>
+            <py-config type="toml">
+                packages = ["numpy"]
+            </py-config>
+            <py-env hidden>
+                - document
+                - numpy
+            </py-env>
+        </div>
+
+    </div>
+    <script src="../js/localStorage.js"></script>
+    <!--ace-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/mode-python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/ext-language_tools.js"></script>
+    <!--python-->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="../css/editor.css" />
+
+    <script src="../js/editor.js" type="module"></script>
+</body>

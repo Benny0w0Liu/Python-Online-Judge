@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Problem - plus 1</title>
+    <link rel="stylesheet" href="../css/problem.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/editor.css" />
+    <script src="../js/localStorage.js"></script>
+    <link rel="icon" type="image/png" href="../src/icon/monkey.png">
+
+    <!-- pyscript -->
+    <link defer rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="navLeft">
+            <img src="../src/icon/monkey.svg" width="50px" style="margin-right: 10px;">
+            <a href="../index.html">Home </a><a href="../pages/problemList.html"> Problem List</a><a
+                href="../pages/editor.html"> Online Editor</a>
+        </div>
+
+        <div id="navRight">
+            <img src="../src/material/account.svg" id="login-button">
+            <img src="../src/material/logout.svg" id="logout-button">
+        </div>
+    </div>
+    <div id="editorContent"></div>
+    <div id="QuestionArea">
+        <div id="description">
+        </div>
+        <div id="AnswerArea">
+            <div id="AnswerContainer">
+                <div id="codeBtnBar">
+                    <button id="fileSelect" title="upload your code" style="margin-left: 0px;">
+                        upload <img src="../src/material/uploadFile.svg" style="margin-left: 5px;">
+                    </button>
+                    <button id="submitBtn" title="submit your code" style="margin-left: 0px;">submit<img
+                            src="../src/material/submit.svg" style="margin-left: 5px;"></button>
+                    <input type="file" id="fileElem" multiple="true" accept=".py" style="display:none"
+                        onchange="handleFiles(this.files)" />
+                </div>
+                <div id="codeArea">
+                    <div id="editor"></div>
+                    <div><img src="../src/material/terminal.svg"
+                            style="margin-top: 4px;margin-bottom: -6.5px;margin-right: 4px;">console
+                    </div>
+                    <div id="console"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ace-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/mode-python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.0/ext-language_tools.js"></script>
+    <script src="../js/problem.js" type="module"></script>
+</body>
+
+</html>
